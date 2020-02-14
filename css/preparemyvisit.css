@@ -1,0 +1,198 @@
+.pmv-titles {
+	height: 20vh;
+	background-color: #71388B;
+	display: flex;
+}
+
+.pmv-container {
+    background: linear-gradient(180deg,#71388B,#5A266D);
+    height: 60vh;
+}
+
+.pmv-titles h1 {
+	color: #F6CD40;
+	text-align: center;
+    margin: auto;
+    font-family: 'Commando';
+	font-size: 3em;
+}
+
+.pmv-titles h1:hover {
+    cursor: pointer;
+}
+
+/* .pmv-content-1 {
+    height: 20vh;
+    background: linear-gradient(97.98deg, #B91466 0%, #C9116A 57.28%);
+} */
+
+.pmv-content-2 {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    width: 100vw;
+}
+
+.pmv-tarfi-billeterie {
+    height: 20vh;
+    background: linear-gradient(97.98deg, #B91466 0%, #C9116A 57.28%);
+}
+
+#pmv-result {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    position: absolute;
+    bottom: 10vh;
+    font-size: 2em;
+    color: white;
+}
+
+.pmv-label {
+    font-family: 'Josefin Sans';
+    font-size: 1.2vw;
+}
+
+.pmv-form-content-1,
+.pmv-form-content-2,
+.pmv-form-content-3,
+.pmv-form-content-4 {
+    /* padding: 2vh; */
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.pmv-form-content-2 {
+    position: relative;
+}
+
+.pmv-form-container {
+    height: 60vh;
+    position: relative;
+    width: 80vw;
+}
+
+#baby,
+#kid,
+#teen,
+#adult {
+    width: 10vw;
+    height: 3vh;
+    margin-left: 5vh;
+    cursor: pointer;
+}
+
+/* #kid:hover {
+    box-shadow: 0 0 10px #F6CD40, 0 0 40px #F6CD40, 0 0 80px #F6CD40;
+} */
+.pmv-form-container-readonly{
+    /* float: right; */
+    margin-left: 25vh;
+}
+
+.pmv-form-readonly {
+    width: 5vh;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.2vw;
+    font-family: 'Josefin Sans';
+}
+
+.pmv-moins {
+    margin-right: 5vh;
+    font-size: 2vw;
+    cursor: pointer;
+    font-family: 'Josefin Sans';
+}
+
+.pmv-plus {
+    margin-left: 2vh;
+    font-size: 1.8vw;
+    cursor: pointer;
+    font-family: 'Josefin Sans';
+}
+
+.result-form-tarif {
+    color: white;
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 2vw;
+    font-family: 'Josefin Sans';
+}
+
+.prix-tarif {
+    font-family: 'Josefin Sans';
+}
+
+@media screen and (max-width:1920px) {
+    .pmv-label {
+        /* font-size: em; */
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .pmv-titles h1 {
+        font-size: 2.5em;
+    }
+
+    #pmv-btn-submit-cost {
+        width: 40vw;
+        font-size: 1.6em;
+    }
+
+    .pmv-label {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width:1112px) {
+    .pmv-titles h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .pmv-titles h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .pmv-titles {
+        padding-top: 8vh;
+        flex-direction: column;
+    }
+
+    #pmv-btn-submit-cost {
+        width: 90vw;
+    }
+
+    #baby,
+    #kid,
+    #teen,
+    #adult {
+        width: 30vw;
+    }
+
+    #pmv-result {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:375px) {
+    #pmv-result {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #pmv-result {
+        font-size: 1.2em;
+    }
+    .pmv-titles h1 {
+        font-size: 1.5em;
+    }
+}

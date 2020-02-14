@@ -1,0 +1,70 @@
+.navbar-bloc {
+    height: 20vh;
+    background-color: #1C1F3D;
+    border-bottom: 1em solid #323868;
+    position: relative;
+}
+
+.nav-logo img {
+    width: 40vh;
+    margin: 1vh 0 0 2vh;
+    position: absolute;
+    z-index: 1001;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+    /* float: right; */
+    font-family: "Commando";
+    /* line-height: 35px; */
+    font-size: 2em;
+    position: absolute;
+    bottom: -6%;
+    right: 0;
+}
+
+.navbar div {
+    /* float: right; */
+    /* width: 20vh; */
+    text-align: center;
+    border: 1px solid white;
+    border-bottom: 1px transparent;
+    background-color: #323868;
+    padding: 1%;
+    padding-bottom: 0;
+}
+
+.navbar div a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar div a:hover {
+    color: #F6CD40;
+}
+
+
+@media screen and (max-width:1112px){
+    .navbar {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .navbar {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width:414px){
+    .navbar {
+        display: none;
+    }
+
+    .nav-logo img {
+        width: 30vh;
+        margin: 4vh 0 0 2vh;
+    }    
+}

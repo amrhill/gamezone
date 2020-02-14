@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "Commando";
+	src: 	url("../fonts/commando.woff") format("woff"),
+            url("../fonts/commando.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    src:    url('../fonts/JosefinSans-Bold.ttf'),
+            url('../fonts/JosefinSans-SemiBoldItalic.ttf'),
+            url('../fonts/JosefinSans-Regular.ttf'),
+            url('../fonts/JosefinSans-LightItalic.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}

@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.mobile {
+    display: none;
+}
+
+.attractions-container {
+	height: 100vh;
+}
+
+.attractions-title {
+	height: 20vh;
+	background-color: #71388B;
+	display: flex;
+}
+
+.attractions-title h1 {
+	color: #F6CD40;
+	text-align: center;
+    margin: auto;
+    font-family: 'Commando';
+	font-size: 3em;
+}
+
+.attractions-main {
+	/* height: 80vh; */
+	display: flex;
+	justify-content: space-around;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.attractions-bloc {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.attractions-txt {
+    width: 50%;
+    margin: auto;
+}
+
+.attractions-img {
+    margin: auto;
+}
+
+.attractions-bloc.impair .attractions-txt h3{
+    color: #C9116A;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: "Josefin Sans";
+}
+
+.attractions-pi-1{
+    font-style: italic;
+    font-weight: 600;
+    font-family: "Josefin Sans";
+}
+
+.attractions-pi-2{
+    color: #C9116A;
+    font-style: italic;
+    font-weight: 300;
+    font-family: "Josefin Sans";
+}
+
+.attractions-pi-3 {
+    font-family: "Josefin Sans";
+}
+
+.attractions-pi-3 a{
+    color: #881F6A;
+    font-family: "Josefin Sans";
+}
+
+.attractions-bloc.pair{
+    background-color: #881F6A;
+    font-family: "Josefin Sans";
+}
+
+.attractions-bloc.pair .attractions-txt h3{
+    color: #F6CD40;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: "Josefin Sans";
+}
+
+.attractions-p-1{
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+    font-family: "Josefin Sans";
+}
+
+.attractions-p-2{
+    color: #F6CD40;
+    font-style: italic;
+    font-weight: 300;
+    font-family: "Josefin Sans";
+}
+
+.attractions-p-3{
+    color: white;
+    font-family: "Josefin Sans";
+}
+
+.attractions-p-3 a {
+    color: #F6CD40;   
+    font-family: "Josefin Sans"; 
+}
+
+@media screen and (max-width: 1920px){
+    .mobile {
+        display: none;
+    }
+
+    .attractions-txt {
+        width: 50vw;
+        margin: auto;
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .attractions-txt{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .web {
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .attractions-bloc {
+        flex-direction: column;
+        height: 120vh;
+        /* margin: 20vh 0; */
+    }
+
+    .attractions-txt {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .attractions-img img {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .attractions-txt {
+        margin: auto;
+        font-size: 1em;
+    }
+}

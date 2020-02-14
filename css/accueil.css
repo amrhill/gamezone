@@ -1,0 +1,17 @@
+.bloc-index {
+    width: 80vw;
+    margin: auto;
+    margin-top: 10vh;
+    overflow-x: hidden;
+}
+
+.bloc-index p {
+    font-family: 'Josefin Sans';
+    font-size: 1.2em;
+}
+
+.bloc-index .cometogamezone {
+    font-family: 'Commando';
+    text-align: center;
+    font-size: 2em;
+}

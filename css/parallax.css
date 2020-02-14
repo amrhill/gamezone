@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.zoom {
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    overflow: hidden;
+    background: url(../img/bg3.jpg);
+    /* background: url(bg.jpg); */
+    background-size: cover;
+}
+
+.zoom:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1000;
+    background: linear-gradient(transparent, #fff);
+}
+
+.zoom #layer1 {
+    position: absolute;
+    left: 20%;
+    width: 100%;
+    transform: translateX(-30%);
+    z-index: 10;
+}
+
+.zoom #layer2 {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.zoom #text {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    transform: translateY(50%);
+    font-size: 15vw;
+    bottom: 30vh;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Commando";
+}
+
+@media screen and (max-width: 3840px) {
+    
+}
+
+@media screen and (max-width: 1600px) {
+    .zoom {
+        height: 110vh;
+    }
+
+    .zoom #layer1 {
+        top: 15vh;
+    }
+
+    .zoom #layer2 {
+        top: 15vh;
+    }
+
+    .zoom #text {
+        font-size: 10vw;
+        bottom: 15vh;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .zoom {
+        height: 120vh;
+    }
+
+    .zoom #layer1 {
+        top: 12vh;
+        left: 30%;
+    }
+
+    .zoom #layer2 {
+        top: 15vh;
+    }
+
+    .zoom #text {
+        font-size: 10vw;
+        bottom: 15vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .zoom {
+        height: 130vh;
+    }
+
+    .zoom #layer1 {
+        top: 55vh;
+        left: 35%;
+        transform: scale(2.5);
+    }
+
+    .zoom #layer2 {
+        display: none;
+    }
+
+    .zoom #text {
+        font-size: 10vw;
+        bottom: 40vh;
+    }
+}
